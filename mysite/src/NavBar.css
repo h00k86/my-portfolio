@@ -1,4 +1,7 @@
-.navBar{
-  color:#ADADAD;
-
+.NavBar{
+  display: flex;
+  justify-content:flex-end;
+  gap:5px;
+  border: 2px solid var(--primary-color);
+  color:var(--secondary-color);
 }

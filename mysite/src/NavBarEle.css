@@ -1,0 +1,29 @@
+.NavBarEle {
+
+  padding:15px 15px;
+}
+
+
+.NavBarEle:hover{
+  background-color:#AFCBDE;
+}
+
+.NavBarEle:active{
+  background-color:#FEFEFA;
+}
+
+.link{
+  text-decoration:none;
+  color:var(--secondary-color);
+}
+
+
+
+
+.link:visited{
+  padding:15px 15px;
+  color:var(--secondary-color);
+}
+
+
+
