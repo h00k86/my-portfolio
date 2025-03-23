@@ -1,7 +1,10 @@
 :root {
-  --primary-color: #3FF800;
-  --secondary-color: #C1C1C1;
-  --background-color: #000000;
+  --1-color: #563ACC;
+  --2-color: #C1C1C1;
+  --background-color: #17063B;
+  --3-color:#858AFA;
+  --4-color:#2F0C7A;
+  --5-color:#6364FF;
 }
 
 
@@ -12,7 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color:var(--primary-color);
+  color:var(--2-color);
   background-color:var(--background-color);
 }
 

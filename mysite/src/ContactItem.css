@@ -1,4 +1,14 @@
-.Contact-Item{
+.ContactItem{
 
+  padding:30px 30px 30px 30px;
+
+
+}
+
+
+.img-contact{
+
+  width:124px;
+  height:124px;
 
 }

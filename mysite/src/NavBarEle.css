@@ -5,25 +5,43 @@
 
 
 .NavBarEle:hover{
-  background-color:#AFCBDE;
+  background-color:var(--3-color);
+  animation: rotazioneAlternata 0.3s ease-in-out; /* Applicazione dell'animazione */
 }
 
 .NavBarEle:active{
-  background-color:#FEFEFA;
+  background-color:var(--5-color);
 }
 
 .link{
   text-decoration:none;
   color:var(--secondary-color);
+  padding:0px;
 }
 
 
 
 
 .link:visited{
-  padding:15px 15px;
   color:var(--secondary-color);
 }
 
 
+@keyframes rotazioneAlternata {
+  0% {
+    transform: rotate(3deg); /* Ruota a dx */
+  }
+  25% {
+    transform: rotate(-3deg); /* Ruota a sx */
+  }
+  50% {
+    transform: rotate(3deg); /* Ruota a dx */
+  }
+  75% {
+    transform: rotate(-3deg); /* Ruota a sx */
+  }
+  100% {
+    transform: rotate(0deg); 
+  }
+}
 

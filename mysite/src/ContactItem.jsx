@@ -4,7 +4,9 @@ import './ContactItem.css';
 function ContactItem(props){
   return (
     <div className='ContactItem'>
-      <img src={props.src} alt={props.alt}/> 
+      <a href={props.href}>
+      <img className="img-contact" src={props.src} alt={props.alt}/> 
+      </a>
     </div>
   );
 
