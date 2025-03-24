@@ -1,0 +1,80 @@
+/* Contenitore dei progetti in orizzontale */
+.projects-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Abilita lo scroll orizzontale se necessario */
+  gap: 20px; /* Spazio tra i progetti */
+  padding: 20px;
+}
+
+/* Stile per ogni ProjectItem */
+.ProjectItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--1-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  margin: 15px;
+  transition: transform 0.3s ease-in-out;
+  flex-shrink: 0; /* Impedisce che l'elemento si riduca */
+  cursor: pointer; /* Aggiunge il cursore a mano al passaggio sopra */
+}
+
+/* Effetto di hover per ingrandire il ProjectItem */
+.ProjectItem:hover {
+  transform: translateY(-5px) scale(1.05); /* Aumenta l'effetto di ingrandimento */
+}
+
+/* Stile dell'immagine */
+.ProjectItem img {
+  width: 100%;
+  max-height: 200px; /* Limita l'altezza dell'immagine */
+  object-fit: cover; /* Ritaglia l'immagine per mantenere il suo rapporto di aspetto */
+  border-bottom: 1px solid #f1f1f1; /* Linea sottile sotto l'immagine */
+}
+
+/* Contenuto del ProjectItem (titolo, descrizione) */
+.ProjectItem-content {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Titolo del progetto */
+.ProjectItem h3 {
+  font-size: 1.5rem;
+  color: var(--2-color);
+  margin: 10px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Descrizione del progetto */
+.ProjectItem p {
+  font-size: 1rem;
+  color: var(--3-color);
+  margin-bottom: 15px;
+}
+
+/* Link del progetto */
+.ProjectItem a {
+  display: inline-block;
+  background-color: var(--4-color);
+  color: var(--2-color);
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+/* Hover sul link */
+.ProjectItem a:hover {
+  background-color: var(--3-color);
+}
+
+/* Hover sul titolo del progetto */
+.ProjectItem h3:hover {
+  color: var(--4-color); /* Cambia colore del titolo al passaggio del mouse */
+}
